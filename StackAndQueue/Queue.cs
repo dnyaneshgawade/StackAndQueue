@@ -39,5 +39,18 @@ namespace StackAndQueue
                 temp = temp.next;
             }
         }
+        internal void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            else
+            {
+                Node temp = head;
+                head = head.next;
+                temp.next = null;
+            }
+        }
     }
 }
