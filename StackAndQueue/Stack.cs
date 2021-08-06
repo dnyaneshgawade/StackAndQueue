@@ -32,5 +32,24 @@ namespace StackAndQueue
             }
             Console.WriteLine();
         }
+        internal void Pop()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            this.head = this.head.next;
+        }
+        public void Peek()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            else
+            {
+                Console.WriteLine("Peek element is :" + this.head.data);
+            }
+        }
     }
 }
